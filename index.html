@@ -57,61 +57,20 @@
 </nav>
 
 <!-- HERO -->
-<section id="home" class="relative min-h-[90vh] flex items-center bg-navy-900 pt-20 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-            
-            <div class="lg:col-span-7 pb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-medium mb-6">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
-                    </span>
-                    Available for Product roles
-                </div>
-                
-                <h1 class="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                    Building Trust <span class="text-teal-400 italic">Architecture</span>
-                </h1>
-                
-                <p class="text-xl text-slate-400 mb-8 max-w-xl leading-relaxed">
-                    Product Manager specializing in the intersection of <span class="text-white">user research</span> and <span class="text-white">fintech onboarding</span>. Diagnosing friction to build products people trust.
-                </p>
-
-                <div class="flex flex-wrap gap-4 mb-12">
-                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-slate-300 text-sm font-medium">McKinsey Forward Alum</span>
-                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-slate-300 text-sm font-medium">She Code Africa Mentee</span>
-                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-slate-300 text-sm font-medium">Extern Global Ambassador</span>
-                </div>
-
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                    <a href="#projects" class="bg-teal-600 hover:bg-teal-500 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg shadow-teal-900/20">
-                        View Case Studies
-                    </a>
-                    <div class="flex items-center gap-4">
-                        <a href="https://linkedin.com/in/ajayi-ore-oluwa" target="_blank" class="text-slate-400 hover:text-white transition-colors">
-                            <i data-lucide="linkedin" class="w-6 h-6"></i>
-                        </a>
-                        <a href="mailto:Adesoye96@gmail.com" class="text-slate-400 hover:text-white transition-colors">
-                            <i data-lucide="mail" class="w-6 h-6"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="lg:col-span-5 flex justify-center lg:justify-end items-end">
-                <div class="relative w-full max-w-md">
-                    <img 
-                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAsQBbgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2h1dnd4eXqGhiWghjc3RpbWp0eXp6eH17fH18fX1/9oADAMBAAIRAxEAP..." 
-                        alt="Oreoluwa Ajayi" 
-                        class="w-full h-auto rounded-3xl"
-                    >
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
+.hero{background:var(--navy);padding:3.5rem 2rem 0;position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;border-radius:50%;background:rgba(201,146,42,0.06);pointer-events:none}
+  .hero-inner{max-width:700px;margin:0 auto;display:grid;grid-template-columns:1fr 150px;gap:2rem;align-items:end}
+  .hero-text{padding-bottom:2rem}
+  .eyebrow{display:inline-flex;align-items:center;gap:6px;background:var(--gold-light);border:0.5px solid var(--gold-border);color:var(--gold);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:1.25rem}
+  .hero h1{font-family:'Sora',sans-serif;font-size:1.85rem;font-weight:700;color:#fff;line-height:1.2;margin-bottom:.5rem}
+  .hero-sub{font-size:14px;color:rgba(255,255,255,0.5);margin-bottom:1.25rem}
+  .badges{display:flex;flex-wrap:wrap;gap:6px}
+  .badge{font-size:11px;padding:3px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.65);background:rgba(255,255,255,0.07)}
+  .badge.gold{border-color:var(--gold-border);color:var(--gold);background:var(--gold-light)}
+  .photo-col{align-self:end}
+  .photo-frame{width:150px;height:180px;border-radius:14px 14px 0 0;overflow:hidden;border:1.5px solid var(--gold-border);border-bottom:none}
+  .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:top center}
+  .hero-divider{height:3px;background:linear-gradient(90deg,var(--gold) 0%,rgba(201,146,42,0.2) 60%,transparent 100%)}/section>
 
 </section>
 
